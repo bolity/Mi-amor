@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ame</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="map-container" id="map">
+    <div class="memories">
+      <div class="memory" data-text="Día del primer beso 💋"></div>
+      <div class="memory" data-text="Primeros mensajitos 📩"></div>
+      <div class="memory" data-text="Primer día que dormimos juntos ♥️"></div>
+      <div class="memory" data-text="Primer beso documentado🗣️"></div>
+      <div class="memory" data-text="Día que quedamos por primera vez💌"></div>
+      <div class="memory" data-text="De mis mejores recuerdos😺"></div>
+    </div>
+
+    <!-- Estrella amarilla que abre la máquina del tiempo -->
+    <div id="timeMachineStar" class="star glowing"></div>
+
+    <!-- Tooltip para mostrar información al pasar el mouse sobre las memories -->
+    <div id="tooltip" class="tooltip"></div>
+  </div>
+
+  <!-- Máquina del tiempo con ruleta -->
+  <div class="time-machine">
+    <div class="roulette">
+      <div class="arrows">
+        <span class="arrow prev">&#10094;</span>
+        <span class="arrow next">&#10095;</span>
+      </div>
+      <div class="slots">
+        <div class="slot" data-month="2023-12-15">mitad dic</div>
+        <div class="slot" data-month="2023-12-30">fin dic</div>
+        <div class="slot" data-month="2024-01-15">mitad ene</div>
+        <div class="slot" data-month="2024-01-30">fin ene</div>
+        <div class="slot" data-month="2024-02-15">mitad feb</div>
+        <div class="slot" data-month="2024-02-28">fin feb</div>
+        <div class="slot" data-month="2024-03-15">mitad mar</div>
+        <div class="slot" data-month="2024-03-30">fin mar</div>
+        <div class="slot" data-month="2024-04-15">mitad abr</div>
+      </div>
+    </div>
+    <div class="gallery"></div>
+    <p class="download-info">Haz clic en cualquier foto para descargarla 📸</p>
+  </div>
+  <p class="carta-amor">Hola mi amor, este texto intentare que sea algo mas informal, pero al expresar sentimientos me sale todo como muy formal no se por qué jsjadska. Me gustaria que entendieras que tan importante eres para mi, eres de hecho lo más importante, eres la unica persona con la que he sentido un amor tan grande y por eso me encantaría poder darte todo lo que quieras y más pero por desgracia no todo se puede ajdsja. Todos los dias pienso en ti aun que nada en especifico me haga recordarte, si tuvieras camaras podrias verme a mi disociando durante minutos sin ver, hacer ni escuchar nada simplemente pensando en algo relaccionado contigo, y es la primera vez en mi vida que eso me pasa, ademas todos los días. Hice una lista durante unos días de las cosas que me enamoraban de ti, era bastante larga, pero ahora mi movil esta roto y  no puedo ponertelo aqui por desgracia, pero en cuanto lo tenga de vuelta pidemelo y mira porque creo que hay cosas que no te dije. </p>
+  <footer>Music by <a href="https://pixabay.com/es/users/nikoo1-43792963/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=209513">Nikoo1</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=209513">Pixabay</a></footer>
+
+  <audio id="background-music" autoplay loop>
+    <source src="free-lofi-type-beat-starlit-skies-209513.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+
+
+  <script src="script.js"></script>
+  <div class="music-credit">
+    Music by <a href="https://pixabay.com/es/users/nikoo1-43792963/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=209513" target="_blank">Nikoo1</a>
+    from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=209513" target="_blank">Pixabay</a>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const music = document.getElementById("bg-music");
+        if (music) {
+          music.volume = 0.2;
+        }
+      });
+    </script>
+
+
+  </div>
+</body>
+</html>
