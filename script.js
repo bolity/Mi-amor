@@ -1,24 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const map = document.getElementById('map');
-  const memories = Array.from(document.querySelectorAll('.memory'));
-  const tooltip = document.getElementById('tooltip');
-  const timeStar = document.getElementById('timeMachineStar');
-
-  
-  // ——— ÓRBITAS & PARALLAX ———
-  const orbits = [];
-  const count = memories.length;
-  const minRadius = 120;
-  const maxRadius = Math.min(window.innerWidth, window.innerHeight) / 2 - 50;
-  const spacing = (maxRadius - minRadius) / count;
-
-  memories.forEach((mem, i) => {
-    const base   = minRadius + spacing * i;
-    const radius = base + (Math.random() * spacing * 0.2 - spacing * 0.1);
-    const angle0 = Math.random() * Math.PI * 2;
-    const speed  = 0.0003 + Math.random() * 0.0003;
-    orbits.push({ mem, radius, angle: angle0, speed, originalSpeed: speed });
-  });
+   const map = document.getElementById('map');
+   const memories = Array.from(document.querySelectorAll('.memory'));
+   const tooltip = document.getElementById('tooltip');
+   const timeStar = document.getElementById('timeMachineStar');
+ 
+   // ——— ÓRBITAS & PARALLAX ———
+   const orbits = [];
+   const count = memories.length;
+   const minRadius = 120;
+   const maxRadius = Math.min(window.innerWidth, window.innerHeight) / 2 - 50;
+   const spacing = (maxRadius - minRadius) / count;
+ 
+   memories.forEach((mem, i) => {
+     const base   = minRadius + spacing * i;
+     const radius = base + (Math.random() * spacing * 0.2 - spacing * 0.1);
+     const angle0 = Math.random() * Math.PI * 2;
+     const speed  = 0.0003 + Math.random() * 0.0003;
+     orbits.push({ mem, radius, angle: angle0, speed, originalSpeed: speed });
+   });
+ 
 
   let targetX = 0, targetY = 0;
   let currentX = 0, currentY = 0;
