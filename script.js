@@ -3,9 +3,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const memories = Array.from(document.querySelectorAll('.memory'));
   const tooltip = document.getElementById('tooltip');
   const timeStar = document.getElementById('timeMachineStar');
-const audio = document.getElementById("background-music");
-    audio.play();
-    this.style.display = 'none'; 
 
   
   // ——— ÓRBITAS & PARALLAX ———
