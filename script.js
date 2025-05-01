@@ -186,10 +186,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // ========= GALERÍA DE IMÁGENES (±15 días) =========
 const imageList = [
-  '20250215_160157.jpg',
-  '20250215_160735.jpg',
-  '20250301_172214.jpg',
-  '20250215_160800.jpg',
   '20250221_165802.jpg',
   '20250221_165806.jpg',
   '20250223_171614.jpg',
